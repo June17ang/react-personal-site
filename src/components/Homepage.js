@@ -5,9 +5,11 @@ import "../styles/Homepage.css";
 export default class Homepage extends Component {
   render() {
     return (
-      <div id="homepage-section">
-        <div>{details.name}</div>
-        <div>{details.position}</div>
+      <div id="hmpg-section">
+        <div className="centered" id="hmpg-info">
+          <div id="hmpg-name">{details.name}</div>
+          <div id="hmpg-position">{details.position}</div>
+        </div>
       </div>
     );
   }

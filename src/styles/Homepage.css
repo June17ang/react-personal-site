@@ -1,0 +1,10 @@
+#hmpg-section {
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+#hmpg-info {
+    display: flex;
+    flex-direction: column;
+}
