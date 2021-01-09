@@ -15,46 +15,47 @@ const useStyles = makeStyles((theme) => ({
 export default function Contactme() {
   const classes = useStyles();
   return (
-    <div id="section-contactme">
-      <div id="ctm-content">
-        <div>
-          <h2>Contact Me</h2>
-        </div>
-        <div id="contact-list">
-          {Object.values(contactInfo).map((item) => {
-            return (
-              <div>
-                <a
-                  key={item.name}
-                  href={item.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
-                  <Button
-                    className={classes.button}
-                    variant="contained"
-                    color="primary"
-                    startIcon={
-                      item.icon === "linkedin" ? (
-                        <LinkedIn />
-                      ) : item.icon === "github" ? (
-                        <GitHub />
-                      ) : item.icon === "twitter" ? (
-                        <Twitter />
-                      ) : (
-                        <Link />
-                      )
-                    }
+    <section id="section-contactme">
+      <div id="section-div-contactme">
+        <div id="ctm-content">
+          <div>
+            <h2>Contact Me</h2>
+          </div>
+          <div id="contact-list">
+            {Object.values(contactInfo).map((item) => {
+              return (
+                <div key={item.name}>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none" }}
                   >
-                    {item.name}
-                  </Button>
-                </a>
-              </div>
-            );
-          })}
+                    <Button
+                      className={classes.button}
+                      variant="contained"
+                      color="primary"
+                      startIcon={
+                        item.icon === "linkedin" ? (
+                          <LinkedIn />
+                        ) : item.icon === "github" ? (
+                          <GitHub />
+                        ) : item.icon === "twitter" ? (
+                          <Twitter />
+                        ) : (
+                          <Link />
+                        )
+                      }
+                    >
+                      {item.name}
+                    </Button>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

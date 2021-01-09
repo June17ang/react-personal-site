@@ -15,7 +15,7 @@
   transform: translate(-50%, -50%);
 }
 
-div[id^=section-] {
+div[id^=section-div] {
   min-height: 100vh;
 }
 

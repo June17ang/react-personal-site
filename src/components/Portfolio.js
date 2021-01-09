@@ -78,31 +78,33 @@ export default function Portfolio() {
   );
 
   return (
-    <div id="section-porfolio">
-      <div id="pfl-list">
-        {Object.keys(porfolioLists).map((index, key) => {
-          return (
-            <div
-              onClick={(event) => {
-                event.preventDefault();
-                handleOpen(index);
-              }}
-              id="pfl-item"
-              key={"portfolio-list-key-" + key}
-            >
-              <span>{index.charAt(0).toUpperCase() + index.slice(1)}</span>
-            </div>
-          );
-        })}
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-title"
-          aria-describedby="modal-description"
-        >
-          {modalBody}
-        </Modal>
+    <section id="section-portfolio">
+      <div id="section-div-portfolio">
+        <div id="pfl-list">
+          {Object.keys(porfolioLists).map((index, key) => {
+            return (
+              <div
+                onClick={(event) => {
+                  event.preventDefault();
+                  handleOpen(index);
+                }}
+                id="pfl-item"
+                key={"portfolio-list-key-" + key}
+              >
+                <span>{index.charAt(0).toUpperCase() + index.slice(1)}</span>
+              </div>
+            );
+          })}
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-title"
+            aria-describedby="modal-description"
+          >
+            {modalBody}
+          </Modal>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
