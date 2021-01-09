@@ -1,24 +1,10 @@
 import React, { useState } from "react";
 import { details } from "../data/Homepage";
-import "../styles/Homepage.scss";
+import "../styles/Homepage.css";
 import { Menu, Close } from "@material-ui/icons";
 
 export default function Homepage() {
   const [menuOpen, setMenuOpen] = useState("none");
-
-  const fallingItemList = () => {
-    let arr = [];
-
-    for (let i = details.charMin; i <= details.charMax; i++) {
-      arr.push(<div className="falling-item">{String.fromCharCode(i)}</div>);
-    }
-
-    return (
-      <div className="falling-item-lists" aria-hidden="true">
-        {arr}
-      </div>
-    );
-  };
 
   const viewMenu = () => {
     if (menuOpen === "none") {
@@ -31,7 +17,7 @@ export default function Homepage() {
   return (
     <section id="section-homepage">
       {/* effect */}
-      {fallingItemList()}
+      {/* {fallingItemList()} */}
 
       <div id="section-div-homepage">
         <div className="centered hmpg-content">

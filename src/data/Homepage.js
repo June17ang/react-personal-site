@@ -7,6 +7,4 @@ export const details = {
     { name: "Portfolio", section: "#section-portfolio" },
     { name: "Contact Me", section: "#section-contactme" },
   ],
-  charMin: 33,
-  charMax: 126,
 };
