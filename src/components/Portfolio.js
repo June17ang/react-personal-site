@@ -59,6 +59,7 @@ export default function Portfolio() {
               href={content.link}
               style={{ textDecoration: "none" }}
               target="_blank"
+              rel="noreferrer"
             >
               <Button variant="contained">View Portfolio</Button>
             </a>

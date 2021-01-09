@@ -2,4 +2,20 @@
     width: 50vw;
     height: 50vh;
     margin: auto;
+    border: 3px dashed #1067c9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ctm-content > div > h2 {
+    margin-bottom: 15%;
+}
+
+#contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
