@@ -1,16 +1,21 @@
-import React, { Component } from "react";
-import details from "../jsons/Homepage.json";
+import React, { useState } from "react";
+import { details } from "../data/Homepage";
 import "../styles/Homepage.css";
 
-export default class Homepage extends Component {
-  render() {
-    return (
-      <div id="hmpg-section">
-        <div className="centered" id="hmpg-info">
+export default function Homepage() {
+  return (
+    <div id="hmpg-section">
+      <div className="centered" id="hmpg-info">
+        <div>
+          <img id="hmpg-profile" src={details.profile} alt="my profile image" />
+        </div>
+        <div>
           <div id="hmpg-name">{details.name}</div>
-          <div id="hmpg-position">{details.position}</div>
+          <div id="hmpg-position">
+            I'm <span>{details.position}</span>
+          </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
