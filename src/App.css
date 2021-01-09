@@ -9,10 +9,14 @@
 }
 
 .centered {
-  position: fixed; /* or absolute */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+div[id^=section-] {
+  min-height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
