@@ -13,4 +13,4 @@ To start project
 
 ** This project is deploy to DO App Platform
 
-[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/June17ang/react-personal-site/tree/main)
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/June17ang/react-personal-site/tree/main&refcode=91aab256523b)
