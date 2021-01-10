@@ -1,25 +1,84 @@
+/* Original code refer to https://codepen.io/stealy/pen/zYxXpza */
+.stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: -10;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+}
+
+.twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  z-index: -10;
+  animation: move-twink-back 200s linear infinite;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+}
+
+.clouds {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top
+    center;
+  z-index: -10;
+  animation: move-clouds-back 200s linear infinite;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: absolute;
+}
+
 #section-div-contactme {
-    min-height: 100vh;
+  min-height: 100vh;
+}
+
+#ctm-align {
+    height: 25vh;
 }
 
 #ctm-content {
-    width: 50vw;
-    height: 50vh;
-    margin: auto;
-    border: 3px dashed #1067c9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+  border: 3px dashed #1067c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #ctm-content > div > h2 {
-    margin-bottom: 15%;
+  margin-bottom: 15%;
+  color: #fff;
 }
 
 #contact-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -300px 6000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }

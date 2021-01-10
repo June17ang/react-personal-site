@@ -1,3 +1,19 @@
+#section-div-homepage::before {
+  content: " ";
+  display: block;
+  border-left: 60vh solid transparent;
+  border-right: 60vh solid transparent;
+  border-top: 40vh solid #fcba03;
+  border-bottom: 40vh solid #f2cf05;
+}
+
+#section-div-homepage::after {
+  content: " ";
+  display: block;
+  border-top: 20vh solid #f7f1a6;
+  border-left: 120vh solid transparent;
+}
+
 #section-div-homepage {
   background-color: #fefefe;
   color: black;
@@ -94,7 +110,7 @@
   color: #000;
   text-decoration: none;
   padding: 15px;
-  border-bottom: 1px solid #000;
+  border-bottom: 3px solid #000;
   background: #fff;
 }
 
@@ -113,7 +129,9 @@
 
 #menu-close {
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 3px solid;
 }
 
 /* The typing effect */

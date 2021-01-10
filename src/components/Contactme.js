@@ -16,7 +16,11 @@ export default function Contactme() {
   const classes = useStyles();
   return (
     <section id="section-contactme">
+      <div className="stars"></div>
+      <div className="twinkling"></div>
+      <div className="clouds"></div>
       <div id="section-div-contactme">
+        <div id="ctm-align"></div>
         <div id="ctm-content">
           <div>
             <h2>Contact Me</h2>
