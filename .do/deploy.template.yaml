@@ -1,0 +1,7 @@
+spec:
+ name: react-personal-site
+ static_sites:
+ - git:
+     branch: main
+     repo_clone_url: https://github.com/June17ang/react-personal-site.git
+   name: react-personal-site
