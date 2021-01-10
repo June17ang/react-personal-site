@@ -15,10 +15,6 @@
   transform: translate(-50%, -50%);
 }
 
-div[id^=section-div] {
-  min-height: 100vh;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -46,5 +42,35 @@ div[id^=section-div] {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.scrollTop {
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+  padding: 5px 13px;
+  right: 15px;
+  border-radius: 100%;
+  background-color: #ddd;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
   }
 }

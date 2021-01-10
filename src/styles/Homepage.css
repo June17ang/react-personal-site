@@ -1,6 +1,15 @@
 #section-div-homepage {
   background-color: #fefefe;
   color: black;
+  min-height: 100vh;
+}
+
+.drawing1 {
+  height: 10%;
+  width: 10%;
+  background-color: aquamarine;
+  position: absolute;
+  bottom: 100%;
 }
 
 #hmpg-info {

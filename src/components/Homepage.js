@@ -16,9 +16,6 @@ export default function Homepage() {
 
   return (
     <section id="section-homepage">
-      {/* effect */}
-      {/* {fallingItemList()} */}
-
       <div id="section-div-homepage">
         <div className="centered hmpg-content">
           <div className="menu" style={{ display: menuOpen }}>
@@ -59,6 +56,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
+        <div className="drawing1"></div>
       </div>
     </section>
   );
