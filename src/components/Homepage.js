@@ -48,7 +48,7 @@ export default function Homepage() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="personal-info">
               <div id="hmpg-name">{details.name}</div>
               <div id="hmpg-position">
                 I'm <span>{details.position}</span>

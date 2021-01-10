@@ -4,14 +4,6 @@
   min-height: 100vh;
 }
 
-.drawing1 {
-  height: 10%;
-  width: 10%;
-  background-color: aquamarine;
-  position: absolute;
-  bottom: 100%;
-}
-
 #hmpg-info {
   display: flex;
   align-items: center;
@@ -28,10 +20,18 @@
 #hmpg-name {
   font-size: xx-large;
   margin-bottom: 10px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(35, end);
 }
 
 #hmpg-position {
   font-size: x-large;
+  animation: fadeIn ease 15s;
 }
 
 .menu-text {
@@ -114,6 +114,17 @@
 #menu-close {
   cursor: pointer;
   padding: 15px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 @keyframes animateMenuHover {
