@@ -18,6 +18,15 @@ export default function Home() {
                   <div>{pos}</div>
                 ))}
               </div>
+              <div className="homelinkedin-div">
+                <a
+                  className="homelinkedin btnShape"
+                  href={details.linkedin}
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
+              </div>
             </div>
           </div>
           <div className="home-canvas"></div>

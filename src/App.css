@@ -5,7 +5,7 @@
   padding: 8vw 8vw 0 8vw;
 }
 
-section{
+section {
   margin-bottom: 10%;
 }
 
@@ -14,17 +14,22 @@ section{
   font-size: calc(100% + 5vw);
 }
 
-.greeting:before, .greeting:after,
-.cur-position:before, .cur-position:after,
-.adposition:before, .adposition:after {
+.greeting:before,
+.greeting:after,
+.cur-position:before,
+.cur-position:after,
+.adposition:before,
+.adposition:after {
   font-size: 40%;
   font-family: "Homemade Apple", cursive;
   color: #a85d6b;
   display: block;
 }
 
-.cur-position:before, .cur-position:after,
-.adposition:before, .adposition:after {
+.cur-position:before,
+.cur-position:after,
+.adposition:before,
+.adposition:after {
   display: inline-block;
 }
 
@@ -54,9 +59,10 @@ section{
 .adposition {
   display: flex;
   flex-direction: row;
-  font-family: 'Quantico', sans-serif;
+  font-family: "Quantico", sans-serif;
   font-size: 120%;
   color: #888;
+  margin-top: 15px;
 }
 
 .adposition > div:nth-child(odd)::after {
@@ -75,4 +81,36 @@ section{
   content: "<span>";
   margin-right: 10px;
   font-size: 70%;
+}
+
+.homelinkedin-div {
+  margin-top: 40px;
+}
+
+.homelinkedin {
+  font-family: "Teko", sans-serif;
+  padding: 5px 35px;
+  font-size: 25px;
+}
+
+.btnShape {
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  border: none;
+  transition: all 0.3s ease-out;
+  box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, 0.5), 1px 1px 0 0 #444,
+    2px 2px 0 0 #444, 3px 3px 0 0 #444, 4px 4px 0 0 #444, 5px 5px 0 0 #444,
+    6px 6px 0 0 #444, 7px 7px 0 0 #444, 8px 8px 0 0 #444, 9px 9px 0 0 #444,
+    10px 10px 0 0 #444, 11px 11px 0 0 #444, 12px 12px 0 0 #444;
+}
+
+.btnShape:hover{
+  color:#444;
+  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.5),
+    1px 1px 0 0 #d98e20,
+    2px 2px 0 0 #d98e20,
+    3px 3px 0 0 #d98e20,
+    4px 4px 0 0 #d98e20,
+    5px 5px 0 0 #d98e20;
 }
