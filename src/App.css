@@ -1,85 +1,78 @@
 .App {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-#section-footer {
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  background-color: #333;
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
   color: #fff;
-  font-size: 12px;
+  padding: 8vw 8vw 0 8vw;
 }
 
-.scrollTop {
-  height: 40px;
-  position: fixed;
-  bottom: 20px;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  cursor: pointer;
-  animation: fadeIn 0.3s;
-  transition: opacity 0.4s;
-  opacity: 0.5;
-  padding: 5px 13px;
-  right: 15px;
-  border-radius: 100%;
-  background-color: #ddd;
+section{
+  margin-bottom: 10%;
 }
 
-.scrollTop:hover{
-  opacity: 1;
+.greeting {
+  font-family: "Krona One", sans-serif;
+  font-size: calc(100% + 5vw);
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
-  }
+.greeting:before, .greeting:after,
+.cur-position:before, .cur-position:after,
+.adposition:before, .adposition:after {
+  font-size: 40%;
+  font-family: "Homemade Apple", cursive;
+  color: #a85d6b;
+  display: block;
+}
+
+.cur-position:before, .cur-position:after,
+.adposition:before, .adposition:after {
+  display: inline-block;
+}
+
+.greeting:before {
+  content: "<h1>";
+}
+
+.greeting:after {
+  content: "</h1>";
+}
+
+.cur-position {
+  font-family: "Krona One", sans-serif;
+  font-size: calc(100% + 3vw);
+}
+
+.cur-position:before {
+  content: "<p>";
+  margin-right: 15px;
+}
+
+.cur-position:after {
+  content: "</p>";
+  margin-left: 15px;
+}
+
+.adposition {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Quantico', sans-serif;
+  font-size: 120%;
+  color: #888;
+}
+
+.adposition > div:nth-child(odd)::after {
+  content: "|";
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.adposition:after {
+  content: "</span>";
+  margin-left: 10px;
+  font-size: 70%;
+}
+
+.adposition:before {
+  content: "<span>";
+  margin-right: 10px;
+  font-size: 70%;
 }
