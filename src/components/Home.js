@@ -15,7 +15,7 @@ export default function Home() {
               <div className="cur-position">{details.position}</div>
               <div className="adposition">
                 {details.adposition.map((pos) => (
-                  <div>{pos}</div>
+                  <div key={pos}>{pos}</div>
                 ))}
               </div>
               <div className="homelinkedin-div">
