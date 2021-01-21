@@ -23,6 +23,7 @@ export default function Home() {
                   className="homelinkedin btnShape"
                   href={details.linkedin}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Linkedin
                 </a>

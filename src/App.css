@@ -24,7 +24,9 @@ section {
 .title:before,
 .title:after,
 .aboutmeDesc:before,
-.aboutmeDesc:after {
+.aboutmeDesc:after,
+.skillDesc:before,
+.skillDesc:after {
   font-size: 40%;
   font-family: "Homemade Apple", cursive;
   color: #a85d6b;
@@ -127,7 +129,7 @@ section {
 
 .title {
   font-family: "Krona One", sans-serif;
-  font-size: calc(100% + 4vw);
+  font-size: calc(100% + 2vw);
 }
 
 .title:before {
@@ -155,7 +157,7 @@ section {
   content: "<pre>";
   font-size: 100%;
   position:absolute; 
-  right: 62%;
+  right: 48%;
 }
 
 .aboutmeDesc:after {
@@ -166,5 +168,38 @@ section {
 }
 
 .aboutmeAnimation {
-  min-width: 40%;
+  min-width: 55%;
+  max-width: 60%;
+}
+
+.skillChart {
+  width: 400px;
+}
+
+.skill-content{
+  max-width: 50%;
+}
+
+#skillDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25%;
+}
+
+.skillDesc > div:first-child {
+  margin-top: 10px;
+}
+
+.skillDesc:before {
+  content: "<pre>";
+  font-size: 100%;
+  margin-top: 10px;
+}
+
+.skillDesc:after {
+  content: "<pre>";
+  font-size: 100%;
+  position: absolute;
+  left: 48%;
 }
